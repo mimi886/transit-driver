@@ -1,0 +1,55 @@
+<footer id="footer" class="footer" th:fragment="footer">
+    <div class="copyright">
+        &copy; Copyright <strong><span>Transit Hub </span></strong>. All Rights Reserved
+      </div>
+
+
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+     <!-- Vendor JS Files -->
+   <script src="../vendor/bootstrap/js/bootstrap.bundle.js"></script>
+   <script src="../vendor/php-email-form/validate.js"></script>
+   <script src="../vendor/quill/quill.min.js"></script>
+   <script src="../vendor/tinymce/tinymce.min.js"></script>
+   <script src="../vendor/simple-datatables/simple-datatables.js"></script>
+   <script src="../vendor/chart.js/chart.min.js"></script>
+   <script src="../vendor/apexcharts/apexcharts.min.js"></script>
+   <script src="../vendor/echarts/echarts.min.js"></script>
+ 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+   <!-- Template Main JS File -->
+   <script src="../js/main.js"></script>
+
+     <!-- Datatable -->
+ <script type="text/javascript" src="../js/datatables.min.js"></script>
+ <script src="../js/dataTables.buttons.min.js"></script>
+ <script src="../js/jszip.min.js"></script>
+ <script src="../js/pdfmake.min.js"></script>
+ <script src="../js/vfs_fonts.js"></script>
+ <script src="../js/buttons.html5.min.js"></script>
+ <script src="../js/buttons.print.min.js"></script>
+ 
+
+   <th:block th:if="${pagename}=='dashboard'">
+      <script src="../scripts/dashboard.js"></script>
+   </th:block>
+
+   <th:block th:if="${pagename}=='customers'">
+    <script src="../scripts/customers.js"></script>
+   </th:block>
+
+   <th:block th:if="${pagename}=='requests'">
+    <script src="../scripts/requests.js"></script>
+   </th:block>
+
+   <th:block th:if="${pagename}=='link_accounts'">
+    <script src="../scripts/link_accounts.js"></script>
+   </th:block>
+
+   <th:block th:if="${pagename}=='users'">
+    <script src="../scripts/users.js"></script>
+   </th:block>
+
+</footer>
